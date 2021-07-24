@@ -4,9 +4,262 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>007 Front-end Project</title>
+    <title>007 Course</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="shortcut icon" href="./asset/img/logo.svg" type="image/x-icon">
 </head>
 <body>
-    <h1>Selamat datang!</h1>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html" > <span class="fas"><img src="./asset/img/logo.svg" alt="" height="35px"></span> 007 Course</a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#welcome-section" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#lesson-section" class="nav-link">Pelajaran</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#benefit-section" class="nav-link">Manfaat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contributor-section" class="nav-link">Kontributor</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="welcome-session" class="welcome">
+        <div class="container">
+            <h1 style="font-size: 54px;" class="text">SELAMAT DATANG DI 007-COURSE!</h1>
+            <div class="comant">
+                <p>BELAJAR BERSAMA ITU ASYIK!</p>
+                <p>Kami memiliki kontributor berpengalaman yang siap membimbing Anda!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="lesson-section" class="lesson">
+        <div class="logo-lesson">
+            <h3 style="font-size: 30px;">Silahkan Pilih Bahasa Pemrograman Untuk Dipelajari</h3>
+        </div>
+        <div class="lessons">
+            <div class="html">
+                <div class="lesson-icon">
+                    <a href="#">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png" alt="">
+                        <p><b>HTML</b></p>
+                    </a>
+                </div>
+                <p class="texts">Hypertext Markup Language (HTML) adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets dan bahasa scripting seperti JavaScript dan VBScript.</p>
+            </div>
+            <br>
+            <div class="css">
+                <div class="lesson-icon">
+                    <a href="#">
+                        <img src="https://www.kindpng.com/picc/m/464-4640184_css3-png-download-css-icon-transparent-png.png" alt="">
+                        <p><b>CSS</b></p>
+                    </a>
+                </div>
+                <p class="texts">Cascading Style Sheet (CSS) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemograman.</p>
+            </div>
+            <br>
+            <div class="php">
+                <div class="lesson-icon">
+                    <a href="#">
+                        <img class="php-icon" src="data:image/png;base64,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" alt="">
+                        <p><b>PHP</b></p>
+                    </a>
+                </div>
+                <p class="texts">PHP: Hypertext Preprocessor adalah bahasa skrip yang dapat ditanamkan atau disisipkan ke dalam HTML. PHP banyak dipakai untuk memprogram situs web dinamis. PHP dapat digunakan untuk membangun sebuah CMS</p>
+            </div>
+            <br>
+            <div class="js">
+                <div class="lesson-icon">
+                    <a href="#">
+                        <img src="https://iunlocked.org/wp-content/uploads/2019/12/Om-JavaScript-Definition-historik-anvandningar-och-styrkor.png" alt="">
+                        <p class="js-info"><b>JAVASCRIPT</b></p>
+                    </a>
+                </div>
+                <p class="texts">JavaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag SCRIPT.</p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="benefit-section">
+        <h3>Berikut Keunggulan Yang Didapatkan Dari Belajar di 007 Course</h3>
+        <div class="benefit-list">
+            <ul>
+                <div class="benefit">
+                    <li>100% Gratis</li>
+                    <li>Sangat Cocok Bagi Anda Yang Pemula Dalam Dunia Pemrograman</li>
+                    <li>Meningkatkan Kemampuan Pemrograman Anda</li>
+                    <li>Dilengkapi Dengan Video Tutorial Animatif</li>
+                    <li>Memiliki Editor Teks Keren & Mudah Digunakan</li>
+                </div>
+            </ul>
+            <div class="benefit-sign-up">
+                <h3>Ayo tunggu apalagi?</h3>
+                <p>Segera daftarkan diri Anda ke 007 Course</p>
+                <div class="sign-up">
+                    <a href="#">Di sini</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="contributor">
+        <div class="logos">
+            <h2>Kontributor</h2>
+        </div>
+        <div class="cards">
+            <div class="top-section">
+                <img id="image-container" src="./asset/img/anif.jpeg">
+    
+            </div>
+    
+            <div class="contributor-info">
+                <div class="name">Moh. Anif Yuliansyah</div>
+    
+                <div class="dis">Co-Founder</div>
+                <div class="tim">007 COURSE</div>
+    
+                <ul class="social-links">
+                    <a target="blank" href="https://facebook.com/anifyuliansyah007"><i class="fa fa-facebook"></i></a>
+                    <a target="blank" href="https://github.com/Anifyuli"><i class="fa fa-github"></i></a>
+                    <a target="blank" href="https://api.whatsapp.com/send?phone=+6288806025022&text=Hai, saya ingin bertanya beberapa hal mengenail website Anda"><i class="fa fa-whatsapp"></i></a>
+                    <a target="blank" href="https://instagram.com/anifyuli007"><i class="fa fa-instagram"></i></a>
+                </ul>
+    
+            </div>
+        </div>
+        <div class="cards">
+            <div class="top-section">
+                <img id="image-container" src="./asset/img/reihan.jpeg">
+    
+            </div>
+    
+            <div class="contributor-info">
+                <div class="name">Muhammad Reihan Alfasya</div>
+    
+                <div class="dis">Head of Security</div>
+                <div class="tim">007 COURSE</div>
+    
+                <ul class="social-links">
+                    <a target="blank" href="https://facebook.com/reihanalfasya"><i class="fa fa-facebook"></i></a>
+                    <a target="blank" href="https://github.com/reihan159"><i class="fa fa-github"></i></a>
+                    <a target="blank" href="https://api.whatsapp.com/send?phone=+6285321044391&text=Hai, saya ingin bertanya beberapa hal mengenail website Anda"><i class="fa fa-whatsapp"></i></a>
+                    <a target="blank" href="https://instagram.com/reihanalfasya"><i class="fa fa-instagram"></i></a>
+                </ul>
+    
+            </div>
+        </div>
+        <div class="cards">
+            <div class="top-section">
+                <img id="image-container" src="./asset/img/komara.jpg">
+    
+            </div>
+    
+            <div class="contributor-info">
+                <div class="name">Komara Indra Putra</div>
+    
+                <div class="dis">Best Tutor</div>
+                <div class="tim">007 COURSE</div>
+    
+                <ul class="social-links">
+                    <a target="blank" href="https://facebook.com/komaraip"><i class="fa fa-facebook"></i></a>
+                    <a target="blank" href="https://github.com/komaraip"><i class="fa fa-github"></i></a>
+                    <a target="blank" href="https://api.whatsapp.com/send?phone=+6281339879657&text=Hai, saya ingin bertanya beberapa hal mengenail website Anda"><i class="fa fa-whatsapp"></i></a>
+                    <a target="blank" href="https://instagram.com/komaraip"><i class="fa fa-instagram"></i></a>
+                </ul>
+    
+            </div>
+        </div>
+        <div class="cards">
+            <div class="top-section">
+                <img id="image-container" src="./asset/img/fahmi.jpeg">
+    
+            </div>
+    
+            <div class="contributor-info">
+                <div class="name">Dzulfahmi Dzakia Ahmad</div>
+    
+                <div class="dis">Head of Marketing</div>
+                <div class="tim">007 COURSE</div>
+                <ul class="social-links">
+                    <a target="blank" href="https://github.com/fahmidza"><i class="fa fa-github"></i></a>
+                    <a target="blank" href="https://api.whatsapp.com/send?phone=+6285712554302&text=Hai, saya ingin bertanya beberapa hal mengenail website Anda"><i class="fa fa-whatsapp"></i></a>
+                    <a target="blank" href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                </ul>
+    
+            </div>
+        </div>
+        <div class="cards">
+            <div class="top-section">
+                <img id="image-container" src="./asset/img/nadia.jpeg">
+    
+            </div>
+    
+            <div class="contributor-info">
+                <div class="name">Nadia Nur Nisrina</div>
+    
+                <div class="dis">CEO & Founder</div>
+                <div class="tim">007 COURSE</div>
+                <ul class="social-links">
+                    <a target="blank" href="https://github.com/nadia1262"><i class="fa fa-github"></i></a>
+                    <a target="blank" href="https://api.whatsapp.com/send?phone=+6287804080835&text=Hai, saya ingin bertanya beberapa hal mengenail website Anda"><i class="fa fa-whatsapp"></i></a>
+                    <a target="blank" href="https://instagram.com/nadia__3110"><i class="fa fa-instagram"></i></a>
+                </ul>
+    
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-logo">
+            <h2><a href="#" > <span class="fas"><img src="./asset/img/logo.svg" alt="" height="35px"></span> 007 Course</a>
+            </h2>
+        </div>
+        <div class="containers">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Organisasi Kami</h4>
+                        <ul>
+                            <li><a href="#">Tentang Kami</a></li>
+                            <li><a href="#">Layanan Unggulan</a></li>
+                            <li><a href="#">Kebijakan Privasi</a></li>
+                            <li><a href="#">Pertanyaan Umum</a></li>
+                        </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Dapatkan Bantuan</h4>
+                        <ul>
+                            <li><a href="#">Cara Memulai</a></li>
+                            <li><a href="#">Petunjuk Pemakaian Editor Teks</a></li>
+                            <li><a href="#">Persiapan Lingkungan Lokal Pemrograman</a></li>
+                            <li><a href="#">Bantuan Lainnya</a></li>
+                        </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                        <ul class="social-links">
+                            <a target="_blank" href="http://facebook.com/reihanalfasya"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="http://github.com/reihan159"><i class="fa fa-github"></i></a>
+                            <a target="_blank" href="http://api.whatsapp.com/send?phone=+6285321044391&text=Hai, saya ingin bertanya beberapa hal mengenail website Anda."><i class="fa fa-whatsapp"></i></a>
+                            <a target="_blank" href="http://instagram.com/reihanalfasya"><i class="fa fa-instagram"></i></a>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="https://kit.fontawesome.com/8b70099a2c.js" crossorigin="anonymous"></script>
 </body>
 </html>
